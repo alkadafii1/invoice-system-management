@@ -1,11 +1,18 @@
 {
   "version": 2,
+  "builds": [
+    {
+      "src": "api/index.php",
+      "use": "vercel-php@0.9.0"
+    }
+  ],
   "routes": [
     {
       "src": "/(.*)",
       "dest": "/api/index.php"
     }
   ],
+  "outputDirectory": "public/build",
   "env": {
     "APP_ENV": "production",
     "APP_DEBUG": "false",
