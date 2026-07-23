@@ -21,22 +21,23 @@ https://invoice-system-management-pi.vercel.app
 ## Installation
 
 1. Clone repository
+bash
 git clone https://github.com/alkadafii1/invoice-system-management.git
 cd invoice-system-management
 
-2. Install PHP dependencies
+3. Install PHP dependencies
 composer install
 
-3. Install NPM dependencies
+4. Install NPM dependencies
 npm install
 
-4. Create environment file
+5. Create environment file
 cp .env.example .env
 
-5. Generate application key
+6. Generate application key
 php artisan key:generate
 
-6. Configure database in .env file
+7. Configure database in .env file
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -44,13 +45,13 @@ DB_DATABASE=your_database_name
 DB_USERNAME=your_username
 DB_PASSWORD=your_password
 
-7. Run migrations
+8. Run migrations
 php artisan migrate
 
-8. Build assets
+9. Build assets
 npm run build
 
-9. Run development server
+10. Run development server
 php artisan serve
 
 Access the application at http://localhost:8000
